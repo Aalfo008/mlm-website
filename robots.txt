@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://muslimleadershipmedia.org/sitemap.xml

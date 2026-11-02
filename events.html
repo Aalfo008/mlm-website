@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events — Muslim Leadership Media</title>
+<meta name="description" content="Workshops, screenings and gatherings from Muslim Leadership Media.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/events.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Events — Muslim Leadership Media">
+<meta property="og:description" content="Workshops, screenings and gatherings from Muslim Leadership Media.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="events">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">Events</div><h1>Gather, learn &amp; create</h1>
+  <p class="lead">Workshops, screenings and community gatherings. Want MLM at your masjid or school? <a href="contact.html#partner" style="color:var(--gold)">Invite us.</a></p>
+</div></section>
+<section class="section-tight"><div class="wrap narrow" style="max-width:960px">
+  <h2 style="font-size:2rem">Upcoming</h2><div id="upcoming"></div>
+  <h2 style="font-size:2rem;margin-top:56px">Past events</h2><div id="past"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+
+<script>
+MLM.ready.then(async () => {
+  const {json, esc, I, $, reveal} = MLM;
+  const events = await MLM.events();
+  const now = new Date();
+  const gcal = e => { const f = d => d.toISOString().replace(/[-:]|\.\d{3}/g,""); return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(e.title)}&dates=${f(e.start)}/${f(e.end)}&details=${encodeURIComponent(e.description||"")}&location=${encodeURIComponent(e.location||"")}`; };
+  const row = (e, past) => { const d = e.start;
+    return `<article class="event reveal ${past?"past":""}"><div class="date-tile"><span>${d.toLocaleDateString("en-US",{month:"short"})}</span><b>${d.getDate()}</b><span>${d.getFullYear()}</span></div>
+      <div><h3>${esc(e.title)}</h3><div class="meta"><span>${I.clock}${e.allDay?d.toLocaleDateString("en-US",{weekday:"long"}):d.toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit"})}</span>${e.location?`<span>${I.pin}${esc(e.location)}</span>`:""}</div>${e.description?`<p style="margin:10px 0 0;color:var(--ink-2)">${esc(e.description)}</p>`:""}</div>
+      <div class="actions">${past?"":(e.link?`<a class="btn btn-red btn-sm" href="${esc(e.link)}" target="_blank" rel="noopener">Register</a>`:`<a class="btn btn-ghost btn-sm" href="${gcal(e)}" target="_blank" rel="noopener">${I.cal} Add to calendar</a>`)}</div></article>`; };
+  const up = events.filter(e => e.end >= now).sort((a,b)=>a.start-b.start);
+  const past = events.filter(e => e.end < now).sort((a,b)=>b.start-a.start);
+  $("#upcoming").innerHTML = up.length ? up.map(e=>row(e)).join("") : `<div class="empty">No upcoming events right now — new ones are on the way. <a href="index.html#nl-email">Join the newsletter</a> to be the first to know.</div>`;
+  $("#past").innerHTML = past.length ? past.map(e=>row(e,true)).join("") : `<p class="muted">No past events yet.</p>`;
+  reveal();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate — Muslim Leadership Media</title>
+<meta name="description" content="Support Muslim Leadership Media — a registered nonprofit building values-driven media for our community.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/donate.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Donate — Muslim Leadership Media">
+<meta property="og:description" content="Support Muslim Leadership Media — a registered nonprofit building values-driven media for our community.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="donate">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">Donate</div><h1>Help us tell our story</h1>
+  <p class="lead">Whatever it is, the way you tell your story online can make all the difference. Your gift funds free courses, youth workshops and original Muslim media.</p>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="grid g3">
+    <div class="card reveal"><div class="icon-badge" data-icon="cap"></div><h3>Educate</h3><p>Keep the MLM Academy free for every student, everywhere.</p></div>
+    <div class="card reveal"><div class="icon-badge" data-icon="mentor"></div><h3>Mentor</h3><p>Support internships and mentorship for aspiring Muslim creators.</p></div>
+    <div class="card reveal"><div class="icon-badge" data-icon="film"></div><h3>Produce</h3><p>Fund films, documentaries and podcasts that reflect our reality.</p></div>
+  </div>
+  <div class="cta-band on-dark reveal" style="margin-top:40px">
+    <div><h2>Make a donation</h2><p id="donate-note">Muslim Leadership Media is a registered nonprofit. Contact us for donation receipts and other ways to give.</p></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap" id="donate-actions"></div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+
+<script>
+MLM.ready.then(()=>{const{$, $$, I, config:C}=MLM;
+$$("[data-icon]").forEach(e=>e.innerHTML=I[e.dataset.icon]||"");
+$("#donate-actions").innerHTML = C.donateUrl
+  ? `<a class="btn btn-red" href="${C.donateUrl}" target="_blank" rel="noopener">${I.heart} Donate now</a>`
+  : `<a class="btn btn-red" href="mailto:${C.email}?subject=Donation">${I.heart} Email us to give</a><a class="btn btn-ghost" href="tel:${C.phone.replace(/[^\d+]/g,"")}">Call ${C.phone}</a>`;});
+</script>
+</body>
+</html>

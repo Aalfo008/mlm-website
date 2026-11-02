@@ -1,0 +1,274 @@
+{
+  "courses": [
+    {
+      "id": "islamic-media-literacy",
+      "title": "Islamic Media Literacy",
+      "subtitle": "Navigate the digital world with confidence, discernment and Islamic values.",
+      "category": "Media Literacy",
+      "level": "Beginner",
+      "instructor": "Ahmed Alfotihi",
+      "language": "English",
+      "price": "Free",
+      "status": "open",
+      "published": true,
+      "featured": true,
+      "image": "",
+      "color": "#042757",
+      "intro": "",
+      "enrollUrl": "",
+      "outcomes": [
+        "Explain what media is and the key elements every message contains",
+        "Recognize the main types of contemporary media and how they influence you",
+        "Evaluate the credibility of a news story or website in minutes",
+        "Apply Qur'anic principles of verification to what you read, watch and share"
+      ],
+      "description": "Media shapes how the world sees Muslims — and how we see ourselves. This course gives you the tools to understand how media works, question what you consume, and choose content that brings you closer to Allah rather than further away.\n\nIt is built for teens, parents, educators and anyone who wants to become a thoughtful, responsible media consumer and creator.",
+      "lessons": [
+        {
+          "id": "what-is-media",
+          "title": "What Is Media?",
+          "module": "Module 1 · Foundations",
+          "summary": "Why media matters for every Muslim today",
+          "duration": "10 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Media is everywhere\n\nEvery day you are surrounded by media: the videos in your feed, the news on TV, the billboards on the highway, the podcasts in the car. **Media** is any channel used to carry a message from a sender to an audience.\n\nMedia doesn't just inform us — it shapes what we believe is normal, important, beautiful and true. That is why understanding it is not optional for a Muslim today.\n\n## Why media literacy matters for Muslims\n\n- **Representation:** Mainstream coverage of Muslims is often shaped by stereotypes. If we can't read media critically, we may start to believe those portrayals — even about ourselves.\n- **Identity:** Young Muslims spend hours each day online. What they watch forms their role models, values and sense of belonging.\n- **Responsibility:** Every \"share\" is an action we are accountable for. Spreading something false, even unknowingly, has consequences.\n\n> Media literacy is the ability to access, analyze, evaluate and create media — with understanding and intention.\n\n## A simple mindset shift\n\nInstead of asking *\"What is this telling me?\"*, start asking:\n\n1. **Who** made this, and why?\n2. **What** is left out?\n3. **How** is it trying to make me feel?\n4. **Is it beneficial** for my dunya and akhirah?\n\n## Reflection\n\nThink about the last three pieces of media you consumed today. Who created them, and what did they want from you — your attention, your money, your opinion?"
+        },
+        {
+          "id": "elements-of-media",
+          "title": "The Key Elements of Media",
+          "module": "Module 1 · Foundations",
+          "summary": "Sender, message, medium, audience and purpose",
+          "duration": "12 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Every message has a structure\n\nWhether it's a 15-second reel or a feature film, every piece of media is built from the same key elements. Learning to spot them is the first step to thinking critically.\n\n| Element | Question to ask | Example |\n|---|---|---|\n| **Sender** | Who created this? | A news network, a brand, an influencer |\n| **Message** | What idea is being communicated? | \"This product will make you happy\" |\n| **Medium** | What channel carries it? | TikTok, newspaper, radio, YouTube |\n| **Audience** | Who is it aimed at? | Teens, parents, voters |\n| **Purpose** | Why was it made? | To inform, persuade, entertain or sell |\n| **Effect** | What does it change? | Your mood, opinion or behavior |\n\n## Techniques to watch for\n\n- **Framing** — what's inside the frame (and what is cut out) changes the story.\n- **Music and sound** — the same image feels heroic or threatening depending on the soundtrack.\n- **Word choice** — \"freedom fighter\" vs. \"militant,\" \"protest\" vs. \"riot.\"\n- **Repetition** — a message repeated often enough starts to feel true.\n\n## Try it\n\nPick one advertisement or news clip. Fill in all six elements from the table above. What did you notice that you missed the first time?"
+        },
+        {
+          "id": "types-of-contemporary-media",
+          "title": "Types of Contemporary Media",
+          "module": "Module 1 · Foundations",
+          "summary": "From print to social platforms",
+          "duration": "12 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## The media landscape today\n\nMedia has evolved quickly — from printed pages to algorithms that know what you'll watch next.\n\n### Traditional media\n**Newspapers, magazines, radio and television.** Content is produced by professional organizations with editors. It reaches large audiences, but a small number of owners often control what gets covered.\n\n### Digital media\n**News websites, streaming services, podcasts and online video.** Anyone can publish, which opens doors for new voices — including ours — but also makes quality and accuracy uneven.\n\n### Social media\n**Instagram, TikTok, YouTube, X, Facebook, Snapchat.** Content is created by users and ranked by algorithms designed to maximize attention. Emotional, extreme or shocking content tends to spread fastest.\n\n### Journalism\nThe professional practice of gathering, verifying and reporting news. Good journalism follows ethics: accuracy, fairness, and accountability. It can exist on any of the platforms above.\n\n## What this means for you\n\n- Know **which kind of media** you're looking at — the rules and incentives are different.\n- Remember that **algorithms are not neutral**. They show you what keeps you scrolling, not what is true or good for you.\n- Digital and social media are also **an opportunity**: Muslims can now tell our own stories directly to millions.\n\n> The same tools that spread misinformation can spread beneficial knowledge. The difference is the intention and integrity of the person using them."
+        },
+        {
+          "id": "spotting-fake-news",
+          "title": "Spotting Fake News",
+          "module": "Module 2 · Thinking Critically",
+          "summary": "A practical checklist for judging credibility",
+          "duration": "15 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [
+            {
+              "question": "What is the first thing you should check about an unfamiliar news website?",
+              "options": [
+                "How many likes the post has",
+                "Who runs the site and whether they are accountable",
+                "Whether the headline makes you angry"
+              ],
+              "correct": 2
+            },
+            {
+              "question": "A shocking claim appears on only one website. What is the best next step?",
+              "options": [
+                "Share it quickly so others are warned",
+                "Look for the same report from other independent, reputable sources",
+                "Assume it is true because it is detailed"
+              ],
+              "correct": 2
+            }
+          ],
+          "body": "## Why fake news spreads\n\nWebsites and posts can look professional while spreading falsehoods. False stories often spread faster than true ones because they are designed to trigger strong emotions — fear, anger or outrage.\n\n## The 6-step credibility check\n\n1. **Check the source.** Who runs the site? Is there an \"About\" page, real names and contact details?\n2. **Read beyond the headline.** Headlines are written to get clicks. Does the article actually support the claim?\n3. **Check the author.** Are they real? Do they have expertise or a track record?\n4. **Look for evidence.** Are there links to original documents, data or named sources?\n5. **Check the date.** Old stories are often recirculated as if they were new.\n6. **Cross-check.** Is the same story reported by other independent, reputable outlets?\n\n## Red flags 🚩\n\n- ALL CAPS, excessive exclamation marks, or \"they don't want you to know this!\"\n- URLs that imitate real outlets (e.g. extra letters or unusual endings)\n- Images with no source — try a reverse image search\n- Pressure to \"share before it's deleted\"\n\n## Practice\n\nFind a viral claim in your feed this week. Run it through the six steps. Did it hold up?"
+        },
+        {
+          "id": "media-through-an-islamic-lens",
+          "title": "Media Through an Islamic Lens",
+          "module": "Module 2 · Thinking Critically",
+          "summary": "Verification, intention and beneficial content",
+          "duration": "14 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [
+            {
+              "question": "Surah Al-Hujurat (49:6) instructs believers who receive news from an unreliable source to…",
+              "options": [
+                "Ignore it entirely",
+                "Verify it before acting on it",
+                "Share it with family first"
+              ],
+              "correct": 2
+            }
+          ],
+          "body": "## Verification is an Islamic value\n\nLong before \"fact-checking\" was a profession, the Qur'an set a clear standard. In Surah Al-Hujurat (49:6), believers are told that when an untrustworthy person brings them news, they must **verify it**, lest they harm people out of ignorance and then regret what they have done.\n\nThis single principle is the heart of Islamic media literacy: **pause, verify, then act.**\n\n## Three principles to carry with you\n\n### 1. Truthfulness (sidq)\nThe Prophet ﷺ warned that it is enough of a lie for a person to pass on everything they hear. Sharing without checking is not neutral.\n\n### 2. Intention (niyyah)\nAsk yourself *why* you are consuming or sharing something. Is it to learn, to help, to remember Allah — or simply to pass time and feed outrage?\n\n### 3. Benefit (manfa'ah)\nEntertainment that is consumed and forgotten leaves nothing behind. Seek out — and create — content that benefits you and others in this life and the next.\n\n## A personal media audit\n\nFor one week, note what you watch and how you feel afterward. Then decide:\n\n- **Keep:** content that teaches, inspires or brings you closer to Allah\n- **Limit:** content that wastes time without harm\n- **Remove:** content that misleads, degrades or pulls you away from your values\n\n> In Allah we must put our trust — and with the tools He has given us, we can choose media that reflects the truth."
+        }
+      ]
+    },
+    {
+      "id": "storytelling-and-filmmaking",
+      "title": "Storytelling & Filmmaking Foundations",
+      "subtitle": "Learn to tell authentic Muslim stories — starting with the phone in your pocket.",
+      "category": "Media Production",
+      "level": "Beginner",
+      "instructor": "Zeyneb Khechmoune",
+      "language": "English",
+      "price": "Free",
+      "status": "open",
+      "published": true,
+      "featured": true,
+      "image": "",
+      "color": "#7a1f2b",
+      "intro": "",
+      "enrollUrl": "",
+      "outcomes": [
+        "Find and shape a story with a clear message",
+        "Plan a short video with a simple shot list",
+        "Film clean, steady, well-lit footage on a phone",
+        "Edit a rough cut that holds an audience's attention"
+      ],
+      "description": "Our stories deserve to be told by us. In this hands-on course you will learn how to find a story worth telling, plan it, film it with simple equipment and shape it in the edit.\n\nBy the end you will have a plan for your own short film or video — and the confidence to make it.",
+      "lessons": [
+        {
+          "id": "why-stories-matter",
+          "title": "Why Our Stories Matter",
+          "module": "Module 1 · The Story",
+          "summary": "Reclaiming the narrative",
+          "duration": "8 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Who tells our story?\n\nFor decades, stories about Muslims have mostly been told by people outside our communities — and too often they have relied on stereotypes. When we don't tell our own stories, others will tell them for us.\n\n## Stories shape identity\n\nYoung people learn who they can become through the characters they see on screen. When the only Muslim characters are villains or victims, that leaves a gap. Authentic stories fill it with **dignity, depth and possibility**.\n\n## Our tradition is a storytelling tradition\n\nThe Qur'an itself teaches through stories — of prophets, nations and ordinary people facing extraordinary tests. Allah calls these accounts *ahsan al-qasas*, the best of stories, and they carry lessons for those who reflect.\n\n## Your mission in this course\n\nBy the end of these lessons you'll plan and shoot a short video (1–3 minutes) that tells a true, meaningful story from your community.\n\n> Start small. A powerful two-minute story about your grandmother can move more hearts than a big-budget film with nothing to say."
+        },
+        {
+          "id": "finding-your-story",
+          "title": "Finding Your Story",
+          "module": "Module 1 · The Story",
+          "summary": "Character, conflict and purpose",
+          "duration": "14 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## The three ingredients\n\nEvery compelling story — from a documentary to a 60-second reel — needs:\n\n1. **A character** we care about\n2. **A challenge** they face\n3. **A change** — what they learn, overcome or become\n\n## Where to find stories\n\n- A family member's migration journey\n- A local masjid volunteer who quietly feeds hundreds every week\n- A young Muslim pursuing an unusual dream\n- A moment of history from our heritage, retold for today\n\n## Write your logline\n\nA logline is one sentence that captures your story:\n\n> *When [character] faces [challenge], they must [action] in order to [goal].*\n\n**Example:** *When a retired teacher in Virginia loses her sight, she must learn to recite the Qur'an by ear in order to keep teaching her grandchildren.*\n\n## Exercise\n\nWrite three loglines for three different stories. Share them with a friend and ask which one they'd most want to watch — and why."
+        },
+        {
+          "id": "filming-with-a-phone",
+          "title": "Filming With Your Phone",
+          "module": "Module 2 · The Craft",
+          "summary": "Framing, light and sound",
+          "duration": "16 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Your phone is a film camera\n\nModern phones shoot beautiful video. What makes footage look professional is not the camera — it's **stability, light and sound**.\n\n## Stability\n- Use a tripod, or brace your elbows against your body.\n- Move slowly. Hold every shot for at least **5–10 seconds**.\n- Shoot horizontally (16:9) for YouTube and the web; vertically (9:16) for reels and shorts.\n\n## Light\n- Face your subject toward a window — soft daylight is the most flattering light there is.\n- Avoid putting a bright window **behind** your subject.\n- Lock exposure and focus (tap and hold on most phones).\n\n## Sound\nAudiences forgive average video, but not bad audio.\n- Get the microphone close: a $20 clip-on mic makes a huge difference.\n- Record in quiet rooms with soft furnishings (carpets, curtains).\n- Record 30 seconds of \"room tone\" — silence — to help in editing.\n\n## The shot list\nFor every scene, capture:\n- **Wide** — where are we?\n- **Medium** — who is here?\n- **Close-up** — what do they feel?\n- **Details** — hands, objects, textures (great for editing)"
+        },
+        {
+          "id": "editing-basics",
+          "title": "Editing Basics",
+          "module": "Module 2 · The Craft",
+          "summary": "Turning footage into a story",
+          "duration": "15 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Editing is where the story is written again\n\nYou've filmed your scenes — now you shape them into a story.\n\n## Free & simple tools\n- **CapCut** or **iMovie** — great for beginners\n- **DaVinci Resolve** — free, professional-grade\n\n## A simple workflow\n1. **Organize:** put all clips in one folder and name them clearly.\n2. **Assembly cut:** place your best moments in story order. Don't worry about polish.\n3. **Rough cut:** trim every clip. If a moment doesn't serve the story, cut it.\n4. **Fine cut:** add B-roll (detail shots) over interviews, adjust pacing.\n5. **Sound & color:** balance audio levels, add subtle music, correct color.\n6. **Titles & export:** add your title, captions and credits.\n\n## Golden rules\n- **Start strong.** You have about three seconds to earn attention.\n- **Cut on action.** Transitions feel smooth when cut in the middle of a movement.\n- **Add captions.** Most social video is watched on mute.\n- **Choose music with care** — and only use music you have rights to (or consider nasheeds and voice-only soundtracks).\n\n## Your assignment\nEdit a 1–3 minute short from your logline. Send it to us — we'd love to feature student work!"
+        }
+      ]
+    },
+    {
+      "id": "heroes-of-our-heritage",
+      "title": "Heroes of Our Heritage",
+      "subtitle": "Meet the Muslim scholars and inventors who shaped our world.",
+      "category": "Islamic Heritage",
+      "level": "All ages",
+      "instructor": "MLM Team",
+      "language": "English",
+      "price": "Free",
+      "status": "open",
+      "published": true,
+      "featured": true,
+      "image": "",
+      "color": "#8a6a3f",
+      "intro": "",
+      "enrollUrl": "",
+      "outcomes": [
+        "Tell the story of three pioneering Muslim scientists",
+        "Connect their discoveries to technology we use every day",
+        "Draw lessons on curiosity, patience and excellence (ihsan)"
+      ],
+      "description": "Our youth deserve role models drawn from our own rich civilization. Each lesson in this series tells the story of a Muslim pioneer — who they were, what they discovered, and what their example teaches us today.",
+      "lessons": [
+        {
+          "id": "ibn-al-haytham",
+          "title": "Ibn al-Haytham: Father of Optics",
+          "module": "",
+          "summary": "The scientist who explained how we see",
+          "duration": "10 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## Who was he?\n\nAbu Ali al-Hasan **Ibn al-Haytham** was born around 965 CE in Basra, Iraq, and did much of his greatest work in Cairo. In the West he became known as *Alhazen*.\n\n## What did he discover?\n\nFor centuries, many people believed that our eyes send out rays to \"touch\" what we see. Ibn al-Haytham showed through careful experiments that **light travels from objects into the eye**.\n\nHis *Book of Optics* (Kitab al-Manazir) explained reflection, refraction and how lenses work — and it influenced European scientists for hundreds of years.\n\n## The first \"camera\"\n\nHe studied the **camera obscura** — a dark room with a tiny hole that projects an image of the outside world onto the wall. This is the basic principle behind every camera, including the one in your phone. Every film we make today owes something to his work!\n\n## The scientific method\n\nIbn al-Haytham insisted that ideas must be **tested by experiment**, not just accepted because a famous person said them. He wrote that a seeker of truth should be critical even of the books he reads — and of himself.\n\n## Lesson for us\n\nCuriosity is a form of worship when it leads us to reflect on Allah's creation. Like Ibn al-Haytham, question carefully, test patiently, and let the evidence speak."
+        },
+        {
+          "id": "mariam-al-asturlabi",
+          "title": "Mariam al-Asturlabi: Master of the Astrolabe",
+          "module": "",
+          "summary": "A 10th-century innovator in navigation",
+          "duration": "8 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## A 10th-century innovator\n\n**Mariam al-Asturlabi** (also known as Al-'Ijliyah) lived in the 10th century in Aleppo, Syria. Her title, *al-Asturlabi*, comes from the instrument she mastered: the **astrolabe**.\n\n## What is an astrolabe?\n\nAn astrolabe is a handheld model of the sky. With it, people could:\n\n- tell the time by the sun or stars\n- find their latitude and direction\n- determine the direction of the **qiblah** and prayer times\n- support navigation across deserts and seas\n\n## Her contribution\n\nMariam learned the craft from her father and became so skilled that she was employed in the court of the ruler Sayf al-Dawla. Her intricate, precise designs advanced the accuracy of these instruments — part of the long chain of knowledge that leads to today's navigation tools.\n\nIn 1990, a main-belt asteroid — **7060 Al-'Ijliya** — was named in her honor.\n\n## Lesson for us\n\nMariam's story reminds us that Muslim women have always been scholars, makers and innovators. Excellence (*ihsan*) in our craft — whatever it is — is part of our tradition."
+        },
+        {
+          "id": "al-khwarizmi",
+          "title": "Al-Khwarizmi: The Birth of Algebra",
+          "module": "",
+          "summary": "The mathematician behind the 'algorithm'",
+          "duration": "9 min",
+          "video": "",
+          "published": true,
+          "resources": [],
+          "quiz": [],
+          "body": "## The scholar of the House of Wisdom\n\n**Muhammad ibn Musa al-Khwarizmi** (c. 780–850 CE) worked at the famous **House of Wisdom** in Baghdad, a center of learning where scholars translated, debated and advanced knowledge from across the world.\n\n## The birth of algebra\n\nHis book *Al-Kitab al-Mukhtasar fi Hisab al-Jabr wal-Muqabala* gave the world a systematic way to solve equations. The word **\"algebra\"** comes from *al-jabr* in its title.\n\nHe wrote it to help people solve real problems — inheritance shares, trade, land measurement — showing that mathematics could serve the community.\n\n## From his name: \"algorithm\"\n\nWhen his works were translated into Latin, his name became *Algoritmi*. Today the word **algorithm** describes the step-by-step instructions that power computers, apps and the social media feeds we studied in our Media Literacy course!\n\n## Lesson for us\n\nKnowledge in Islam is meant to benefit people. Al-Khwarizmi turned complex problems into clear steps anyone could follow. What problem in your community could you help solve with your talents?"
+        }
+      ]
+    },
+    {
+      "id": "media-careers-mentorship",
+      "title": "Media Careers & Mentorship",
+      "subtitle": "Guidance from Muslim professionals for building a career in media.",
+      "category": "Mentorship",
+      "level": "Intermediate",
+      "instructor": "MLM Mentors",
+      "language": "",
+      "price": "Free",
+      "status": "coming-soon",
+      "published": true,
+      "featured": false,
+      "image": "",
+      "color": "#0b3670",
+      "intro": "",
+      "enrollUrl": "",
+      "outcomes": [],
+      "description": "A mentorship-driven program pairing young Muslims with practitioners in journalism, film, podcasting and digital media. Contact us to join the interest list.",
+      "lessons": []
+    }
+  ]
+}

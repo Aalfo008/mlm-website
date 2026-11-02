@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Article — Muslim Leadership Media</title>
+<meta name="description" content="An article from Muslim Leadership Media.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/post.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Article — Muslim Leadership Media">
+<meta property="og:description" content="An article from Muslim Leadership Media.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="blog">
+<div id="site-header"></div>
+<div id="hero-slot"></div><main id="main"><section class="section"><div class="wrap narrow"><article class="prose" id="body"><div class="skeleton"></div></article><div class="tags" id="tags"></div>
+<div class="card" style="margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:none;background:var(--gold-50)"><div><b>Share this article</b><p class="muted" style="margin:0;font-size:.9rem">Help more people find Muslim voices in media.</p></div><button class="btn btn-sm" id="share">Share</button></div>
+<p style="margin-top:32px"><a href="blog.html">← All articles</a></p></div></section></main>
+<div id="site-footer"></div>
+<script src="assets/js/marked.min.js"></script>
+<script src="assets/js/site.js"></script>
+
+<script>
+MLM.ready.then(async () => {
+  const {json, text, md, esc, fmtDate, param, $, toast} = MLM;
+  const posts = await MLM.posts();
+  const p = posts.find(x => x.slug === param("p"));
+  if (!p) { $("#body").innerHTML = '<h1>Article not found</h1>'; return; }
+  document.title = p.title + " — Muslim Leadership Media";
+  $("#hero-slot").innerHTML = `<section class="page-hero"><div class="wrap"><div class="article-head"><div class="crumbs"><a href="blog.html">Blog</a></div><h1>${esc(p.title)}</h1><div class="article-meta"><span>By ${esc(p.author)}</span><span>·</span><span>${fmtDate(p.date)}</span></div></div></div></section>`;
+  $("#body").innerHTML = (p.image?`<img src="${esc(p.image)}" alt="">`:"") + md(p.body || "");
+  $("#tags").innerHTML = (p.tags||[]).map(t=>`<span class="chip line">${esc(t)}</span>`).join("");
+  $("#share").onclick = async () => { try { if (navigator.share) await navigator.share({title:p.title,url:location.href}); else { await navigator.clipboard.writeText(location.href); toast("Link copied!"); } } catch(e){} };
+});
+</script>
+</body>
+</html>

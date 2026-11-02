@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLM Academy — Muslim Leadership Media</title>
+<meta name="description" content="Free courses in Islamic media literacy, storytelling, filmmaking and Muslim heritage from Muslim Leadership Media.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/academy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="MLM Academy — Muslim Leadership Media">
+<meta property="og:description" content="Free courses in Islamic media literacy, storytelling, filmmaking and Muslim heritage from Muslim Leadership Media.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="academy">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">MLM Academy</div>
+  <h1>Learn. Create. Lead.</h1>
+  <p class="lead">Free, self-paced courses in media literacy, storytelling and Islamic heritage — designed for youth, parents and educators. Your progress saves automatically on this device.</p>
+</div></section>
+<section class="section-tight" id="continue" hidden><div class="wrap">
+  <div class="eyebrow">Continue learning</div>
+  <div class="grid g3" id="continue-list"></div>
+</div></section>
+<section class="section-tight"><div class="wrap">
+  <div class="filters" id="filters"></div>
+  <p class="muted" id="count" style="margin:-12px 0 20px;font-size:.9rem"></p>
+  <div class="grid g3" id="catalog"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+</div></section>
+<section class="section-tight"><div class="wrap"><div class="cta-band on-dark reveal">
+  <div><h2>Teaching a class or youth group?</h2><p>We bring workshops to mosques, schools and community centers. Let's talk about a program for your group.</p></div>
+  <a class="btn btn-gold" href="contact.html#partner">Request a workshop</a>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+<script src="assets/js/academy.js"></script>
+<script>MLM.ready.then(()=>Academy.catalog(MLM.$("#catalog")).catch(e=>{MLM.$("#catalog").innerHTML='<div class="empty" style="grid-column:1/-1">Could not load courses. If you opened this file directly, run a local server (see README).</div>';console.error(e)}));</script>
+</body>
+</html>

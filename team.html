@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Team — Muslim Leadership Media</title>
+<meta name="description" content="Meet the founders, board and interns behind Muslim Leadership Media.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/team.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Our Team — Muslim Leadership Media">
+<meta property="og:description" content="Meet the founders, board and interns behind Muslim Leadership Media.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="team">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">Our team</div>
+  <h1>The people behind MLM</h1>
+  <p class="lead">Dreamers and doers united by one mission: a renaissance of Muslim identity through media.</p>
+</div></section>
+<section class="section"><div class="wrap split">
+  <div class="reveal"><div class="figure-frame" style="aspect-ratio:1"><img class="logo-lockup" src="assets/img/logo-mandala-mlm.png" alt="Muslim Leadership Media logo"></div></div>
+  <div class="reveal">
+    <div class="eyebrow">Who are we?</div>
+    <h2>Zeyneb &amp; Ahmed</h2>
+    <p class="lead">A couple united not just in life but in a profound mission — passionate about reviving the glory of Muslim culture and identity through the powerful medium of media.</p>
+    <p>Zeyneb, with her filmmaking passion, brings stories to life, aiming to illuminate the richness of Muslim heritage with every scene she crafts. Ahmed, with a background in communications and media, strategizes to ensure these stories reach far and wide, hoping to inspire a new generation of leaders who are proud of their Muslim identity.</p>
+    <p>Together, they stand as the pillars of an organization dedicated to a narrative that uplifts, educates and empowers — making Muslim Leadership Media more than an organization: a movement towards a Muslim identity renaissance and unity.</p>
+    <p class="muted">Zeyneb and Ahmed live in Virginia, USA, with their two daughters, Anya and Laya.</p>
+  </div>
+</div></section>
+<section class="section tint"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:44px"><div class="eyebrow">Leadership</div><h2>Board &amp; Directors</h2></div>
+  <div class="grid g3" id="leaders"></div>
+</div></section>
+<section class="section"><div class="wrap" id="interns"></div></section>
+<section class="section-tight"><div class="wrap"><div class="cta-band on-dark reveal">
+  <div><h2>Want to join us?</h2><p>We welcome volunteers, interns and mentors who share our mission.</p></div>
+  <a class="btn btn-gold" href="contact.html">Get in touch</a>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+
+<script>
+MLM.ready.then(async () => {
+  const {json, esc, initials, $, reveal} = MLM;
+  const t = await json("content/team.json");
+  const av = p => `<div class="avatar">${p.photo ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy">` : initials(p.name)}</div>`;
+  $("#leaders").innerHTML = t.leadership.map(p => `<div class="card person reveal">${av(p)}<h3>${esc(p.name)}</h3><div class="role">${esc(p.role)}</div>${p.bio?`<p class="bio">${esc(p.bio)}</p>`:""}</div>`).join("");
+  $("#interns").innerHTML = (t.interns||[]).map(g => `<div class="reveal"><div class="eyebrow">Interns</div><h2 style="font-size:2.2rem;margin-bottom:28px">${esc(g.cohort)}</h2><div class="grid g4">${g.people.map(n=>`<div class="intern"><div class="avatar">${initials(n)}</div><div><b>${esc(n)}</b><small>Intern</small></div></div>`).join("")}</div></div>`).join("");
+  reveal();
+});
+</script>
+</body>
+</html>

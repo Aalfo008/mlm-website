@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Muslim Leadership Media</title>
+<meta name="description" content="Articles and reflections on Muslim media, identity and storytelling.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Blog — Muslim Leadership Media">
+<meta property="og:description" content="Articles and reflections on Muslim media, identity and storytelling.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="blog">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">Blog</div><h1>Reflections &amp; ideas</h1>
+  <p class="lead">Writing on media, identity, heritage and the future of Muslim storytelling.</p>
+</div></section>
+<section class="section-tight"><div class="wrap"><div class="grid g3" id="posts"><div class="skeleton"></div></div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+
+<script>
+MLM.ready.then(async () => {
+  const {json, esc, fmtDate, $, reveal} = MLM;
+  const posts = await MLM.posts();
+  $("#posts").innerHTML = posts.map(p => `<a class="post-card reveal" href="post.html?p=${encodeURIComponent(p.slug)}">
+    <div class="course-cover">${p.image?`<img class="cover" src="${esc(p.image)}" alt="" loading="lazy">`:`<img class="orn" src="assets/img/mandala.png" alt="">`}<div class="chips">${(p.tags||[]).slice(0,2).map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</div></div>
+    <div class="in"><h3>${esc(p.title)}</h3><p class="muted" style="font-size:.95rem">${esc(p.excerpt)}</p><div class="by">${fmtDate(p.date)} · ${esc(p.author)}</div></div></a>`).join("");
+  reveal();
+});
+</script>
+</body>
+</html>

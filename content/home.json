@@ -1,0 +1,27 @@
+{
+  "heroEyebrow": "Nonprofit · Est. 2023 · Virginia",
+  "heroTitle": "A beacon of light in a world of *noise.*",
+  "heroLead": "Muslim Leadership Media builds an alternative entertainment and education platform rooted in Islamic values — reviving the stories of our heritage and raising a new generation of Muslim storytellers.",
+  "aboutTitle": "Reclaiming our narrative — and building bridges.",
+  "aboutLead": "Muslim Leadership Media (MLM) is a nonprofit founded on April 28th, 2023 in Virginia.",
+  "aboutText": "We are committed to creating an alternative entertainment platform for the Muslim community and fostering positive change in the representation of Muslim narratives. MLM also seeks to build bridges between diverse faiths and communities — through inclusive storytelling and media engagement, we promote mutual understanding, respect and shared values across cultural and religious boundaries.",
+  "initiatives": [
+    { "icon": "cap", "title": "Media Education & Training", "text": "Workshops, seminars and training sessions that enhance media literacy, develop critical thinking, and equip young people with the tools to engage effectively in media careers." },
+    { "icon": "mentor", "title": "Mentorship & Guidance", "text": "We connect aspiring Muslim creators with experienced mentors who offer resources, guidance and networking opportunities to help them navigate the industry and succeed." },
+    { "icon": "film", "title": "Media Production", "text": "Diverse, engaging content that reflects the true experiences and aspirations of Muslims — films, documentaries, podcasts and digital media." }
+  ],
+  "missionTitle": "Clean, meaningful content for a chaotic media world.",
+  "missionLead": "In a world saturated with visual pollution and values that don't align with our principles, we offer an alternative.",
+  "missionPoints": [
+    "Establish a global media network rooted in Islamic values, answering the need for clean and meaningful content.",
+    "Revive the stories of our Islamic heritage and the leaders who molded our civilization.",
+    "Offer our youth inspiring role models from our rich civilization to look up to.",
+    "Nurture talented Muslims who aspire to excel in the media industry."
+  ],
+  "instagram": [
+    { "label": "Media literacy", "title": "Islamic media literacy in 5 steps", "url": "https://www.instagram.com/p/C-JHTCIObt_/" },
+    { "label": "Think critically", "title": "How to spot fake news", "url": "https://www.instagram.com/p/C-GY8LBvqK9/" },
+    { "label": "Our heritage", "title": "Meet Mariam al-Asturlabi", "url": "https://www.instagram.com/p/C4JXu03udPY/" },
+    { "label": "Our heritage", "title": "The legacy of Ibn al-Haytham", "url": "https://www.instagram.com/p/CxK5CWSuUqV/" }
+  ]
+}

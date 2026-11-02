@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Muslim Leadership Media</title>
+<meta name="description" content="Contact Muslim Leadership Media — questions, partnerships, workshops and volunteering.">
+<meta name="theme-color" content="#042757">
+<link rel="canonical" href="https://muslimleadershipmedia.org/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muslim Leadership Media">
+<meta property="og:title" content="Contact — Muslim Leadership Media">
+<meta property="og:description" content="Contact Muslim Leadership Media — questions, partnerships, workshops and volunteering.">
+<meta property="og:image" content="https://muslimleadershipmedia.org/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Josefin+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="eyebrow">Contact</div><h1>We'd love to hear from you</h1>
+  <p class="lead">Questions, partnerships, workshop requests or volunteering — reach out any time.</p>
+</div></section>
+<section class="section"><div class="wrap split" style="align-items:start">
+  <div class="reveal">
+    <h2 style="font-size:2.2rem">Get in touch</h2>
+    <p class="muted">Feel free to contact us with any questions.</p>
+    <div class="contact-list" style="margin-top:24px">
+      <a class="contact-item" id="c-email" href="#"><span class="icon-badge" data-icon="mail"></span><span><small>Email</small><b class="v"></b></span></a>
+      <a class="contact-item" id="c-phone" href="#"><span class="icon-badge" data-icon="phone"></span><span><small>Phone</small><b class="v"></b></span></a>
+      <div class="contact-item"><span class="icon-badge" data-icon="pin"></span><span><small>Based in</small><b class="v" id="c-loc"></b></span></div>
+    </div>
+    <div class="card" id="partner" style="margin-top:32px;box-shadow:none;background:var(--gold-50)">
+      <h3>Partner with us</h3>
+      <p>We partner with community organizations, mosques and educational institutions on initiatives that promote media literacy, representation and positive storytelling. Choose "Partnership" in the form and tell us about your organization.</p>
+    </div>
+  </div>
+  <div class="card reveal">
+    <form class="form" data-form="contact">
+      <div class="row">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="f-subject">Topic</label>
+        <select id="f-subject" name="subject"><option>General question</option><option>Partnership</option><option>Workshop request</option><option>Academy / courses</option><option>Volunteering &amp; internships</option><option>Media inquiry</option></select></div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+      <button class="btn btn-red" type="submit">Send message</button>
+      <div class="form-msg">Thank you! We'll be in touch soon, in sha Allah.</div>
+    </form>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js"></script>
+
+
+<script>
+MLM.ready.then(()=>{const{$, $$, I, config:C}=MLM;
+$$("[data-icon]").forEach(e=>e.innerHTML=I[e.dataset.icon]||"");
+$("#c-email").href="mailto:"+C.email;$("#c-email .v").textContent=C.email;
+$("#c-phone").href="tel:"+C.phone.replace(/[^\d+]/g,"");$("#c-phone .v").textContent=C.phone;$("#c-loc").textContent=C.location;
+if(location.hash==="#partner")$("#f-subject").value="Partnership";});
+</script>
+</body>
+</html>

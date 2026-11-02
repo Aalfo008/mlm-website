@@ -1,0 +1,13 @@
+{
+  "leadership": [
+    { "name": "Zeyneb Khechmoune", "role": "Founder, President & CEO", "photo": "", "bio": "A filmmaker bringing stories to life to illuminate the richness of Muslim heritage." },
+    { "name": "Ahmed Alfotihi", "role": "Co-Founder & Vice President", "photo": "", "bio": "With a background in communications and media, Ahmed ensures our stories reach far and wide." },
+    { "name": "Aleena Sayyad", "role": "Board Member", "photo": "", "bio": "" },
+    { "name": "Ahlam Khechemoune", "role": "Director of Marketing & Communication", "photo": "", "bio": "" },
+    { "name": "Amani Khachmoune", "role": "Board Member", "photo": "", "bio": "" },
+    { "name": "Mohammed Alfotihi", "role": "Director of Development", "photo": "", "bio": "" }
+  ],
+  "interns": [
+    { "cohort": "Summer Internship 2023", "people": ["Asma Salhan", "Aminnah Sayyad", "Imen Neja", "Heela Keri", "Mahveen Mustafa", "Elif Erbudak", "Serina Neja"] }
+  ]
+}
