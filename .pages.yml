@@ -1,0 +1,205 @@
+# Pages CMS configuration — https://pagescms.org
+# Sign in at https://app.pagescms.org with GitHub and open this repository.
+# Everything below appears as simple forms. Saving updates the live site.
+
+media:
+  input: assets/uploads
+  output: assets/uploads
+  rename: safe
+
+content:
+  # ---------------------------------------------------------------- ACADEMY
+  - name: academy
+    label: Academy (courses & lessons)
+    type: file
+    path: content/academy.json
+    format: json
+    fields:
+      - name: courses
+        label: Courses
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: title, label: Course title, type: string, required: true }
+          - { name: subtitle, label: One-line summary, type: string }
+          - { name: category, type: string, description: "e.g. Media Literacy, Media Production, Islamic Heritage" }
+          - name: level
+            type: select
+            options: { values: [Beginner, Intermediate, Advanced, All ages] }
+          - { name: instructor, type: string }
+          - { name: language, type: string, default: English }
+          - { name: price, type: string, default: Free }
+          - name: status
+            type: select
+            default: open
+            options:
+              values:
+                - { name: open, label: Open }
+                - { name: coming-soon, label: Coming soon }
+          - { name: published, label: Show on website, type: boolean, default: true }
+          - { name: featured, label: Feature on home page, type: boolean, default: false }
+          - { name: image, label: Cover image, type: image, description: "Optional — 16:9 works best. Without one, a branded cover is used." }
+          - { name: color, label: Cover color, type: string, default: "#042757", description: "Hex color used when there's no cover image" }
+          - { name: intro, label: Intro video link, type: string, description: "Optional YouTube / Vimeo / Google Drive link" }
+          - { name: enrollUrl, label: Registration link, type: string, description: "Optional — e.g. a Google Form or Zoom link" }
+          - { name: outcomes, label: "What you'll learn", type: string, list: true }
+          - { name: description, label: Course description, type: rich-text, options: { format: markdown } }
+          - name: lessons
+            label: Lessons (drag to reorder)
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{index}. {title}" }
+            fields:
+              - { name: title, label: Lesson title, type: string, required: true }
+              - { name: module, label: Module / section, type: string, description: "Optional — lessons with the same text are grouped, e.g. 'Module 1 · Foundations'" }
+              - { name: summary, label: Short summary, type: string }
+              - { name: duration, type: string, description: "e.g. 12 min" }
+              - { name: video, label: Video link, type: string, description: "Paste a YouTube, Vimeo or Google Drive share link (optional)" }
+              - { name: published, label: Show on website, type: boolean, default: true }
+              - { name: body, label: Lesson notes, type: rich-text, options: { format: markdown } }
+              - name: resources
+                label: Downloads & links
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{title}" }
+                fields:
+                  - { name: title, type: string }
+                  - { name: url, label: Link or file URL, type: string }
+              - name: quiz
+                label: Quiz questions
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "Q{index}: {question}" }
+                fields:
+                  - { name: question, type: string }
+                  - { name: options, label: Answer choices, type: string, list: true }
+                  - { name: correct, label: Number of the correct answer, type: number, description: "1 = first choice, 2 = second…" }
+              - { name: id, label: "Web address (leave empty)", type: string, description: "Filled automatically from the title. Only change if you know what you're doing." }
+          - { name: id, label: "Web address (leave empty)", type: string, description: "Filled automatically from the title. Don't change after publishing — learners' progress is tied to it." }
+
+  # ---------------------------------------------------------------- BLOG
+  - name: posts
+    label: Blog posts
+    type: file
+    path: content/posts.json
+    format: json
+    list: true
+    fields:
+      - { name: title, type: string, required: true }
+      - { name: date, type: date, required: true }
+      - { name: author, type: string }
+      - { name: excerpt, label: Short summary, type: text }
+      - { name: image, label: Cover image, type: image }
+      - { name: tags, type: string, list: true }
+      - { name: published, label: Show on website, type: boolean, default: true }
+      - { name: body, label: Article, type: rich-text, options: { format: markdown } }
+      - { name: slug, label: "Web address (leave empty)", type: string }
+
+  # ---------------------------------------------------------------- EVENTS
+  - name: events
+    label: Events
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - { name: title, type: string, required: true }
+      - { name: date, label: Start date, type: date, required: true }
+      - { name: time, label: Start time, type: string, description: "e.g. 6:30 PM — leave empty for all-day" }
+      - { name: end_date, label: End date, type: date, description: "Optional, for multi-day events" }
+      - { name: location, type: string }
+      - { name: description, type: text }
+      - { name: link, label: Registration link, type: string }
+      - { name: image, type: image }
+
+  # ---------------------------------------------------------------- TEAM
+  - name: team
+    label: Team
+    type: file
+    path: content/team.json
+    format: json
+    fields:
+      - name: leadership
+        label: Board & directors
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{name} — {role}" }
+        fields:
+          - { name: name, type: string }
+          - { name: role, type: string }
+          - { name: photo, type: image }
+          - { name: bio, type: text }
+      - name: interns
+        label: Intern cohorts
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{cohort}" }
+        fields:
+          - { name: cohort, label: Cohort name, type: string }
+          - { name: people, label: Names, type: string, list: true }
+
+  # ---------------------------------------------------------------- HOME & SETTINGS
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: heroEyebrow, label: Small label above headline, type: string }
+      - { name: heroTitle, label: Headline, type: string, description: "Wrap words in *asterisks* to make them gold italic" }
+      - { name: heroLead, label: Intro paragraph, type: text }
+      - { name: aboutTitle, label: About — heading, type: string }
+      - { name: aboutLead, label: About — first line, type: string }
+      - { name: aboutText, label: About — paragraph, type: text }
+      - name: initiatives
+        label: Initiatives & programs
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - name: icon
+            type: select
+            options:
+              values:
+                - { name: cap, label: Graduation cap }
+                - { name: mentor, label: Mentor }
+                - { name: film, label: Film }
+                - { name: hands, label: Partnership }
+                - { name: light, label: Lightbulb }
+                - { name: book, label: Book }
+                - { name: heart, label: Heart }
+          - { name: title, type: string }
+          - { name: text, type: text }
+      - { name: missionTitle, label: Mission — heading, type: string }
+      - { name: missionLead, label: Mission — intro, type: text }
+      - { name: missionPoints, label: Mission — points, type: string, list: true }
+      - name: instagram
+        label: Instagram highlights
+        type: object
+        list:
+          max: 8
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, type: string }
+          - { name: url, label: Instagram post link, type: string }
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: announcement, label: Announcement bar text, type: string, description: "Shows a red bar at the top of every page. Leave empty to hide." }
+      - { name: announcementLink, label: Announcement link, type: string }
+      - { name: email, type: string }
+      - { name: phone, type: string }
+      - { name: location, type: string }
+      - { name: donateUrl, label: Donation page link, type: string, description: "Zeffy, Givebutter, PayPal, LaunchGood, Stripe…" }
+      - { name: contactFormEndpoint, label: Contact form endpoint, type: string, description: "From formspree.io — leave empty to use email" }
+      - { name: newsletterFormEndpoint, label: Newsletter form endpoint, type: string }
+      - { name: instagram, type: string }
+      - { name: facebook, type: string }
+      - { name: x, label: X / Twitter, type: string }
+      - { name: youtube, type: string }
