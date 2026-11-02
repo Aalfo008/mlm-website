@@ -2,13 +2,8 @@
   "email": "info@muslimleadershipmedia.org",
   "phone": "(703) 608-8447",
   "location": "Virginia, USA",
-  "donateUrl": "",
-  "contactFormEndpoint": "",
-  "newsletterFormEndpoint": "",
-  "announcement": "",
-  "announcementLink": "",
+  "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=LGMUCUD7YDZ2G",
   "instagram": "https://www.instagram.com/MuslimLeadershipMedia/",
   "facebook": "https://www.facebook.com/profile.php?id=100094369937758",
-  "x": "https://twitter.com/muslimleadmedia",
-  "youtube": ""
+  "x": "https://twitter.com/muslimleadmedia"
 }
